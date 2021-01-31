@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Classes from './Country.module.css'
+import classes from './Country.module.css'
 const countryControl = (props) => (
-    <div>
+    <div className={classes.CardContainer}>
         <div>
-            <img className = {Classes.flag} src= {props.flagUrl} alt='countryImage' />
+            <img className = {classes.Flag} src= {props.flagUrl} alt='countryImage' />
         </div>
         <div>
             <span>{props.name}</span>
